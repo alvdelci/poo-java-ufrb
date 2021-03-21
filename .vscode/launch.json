@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BasePlusCommissionEmployeeTest",
+            "request": "launch",
+            "mainClass": "comissionEmployee.BasePlusCommissionEmployeeTest",
+            "projectName": "POO"
+        },
+        {
+            "type": "java",
             "name": "Launch AccountTest",
             "request": "launch",
             "mainClass": "ByteBank.principal.AccountTest",
