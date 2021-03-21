@@ -1,5 +1,7 @@
-.vscode/
+vscode/
 
-.project
+*.project
 
-.classpath
+*.classpath
+
+*.class
