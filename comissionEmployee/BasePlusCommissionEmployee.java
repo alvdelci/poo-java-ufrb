@@ -4,7 +4,7 @@ package comissionEmployee;
 public class BasePlusCommissionEmployee {
     private double baseSalary; // salario base por semana
 
-    // variáveis de CommissionEmployee
+    // variável CommissionEmployee
     private CommissionEmployee empregadoPorComissao;
 
     // Construtor de seis argumentos
@@ -14,10 +14,10 @@ public class BasePlusCommissionEmployee {
         empregadoPorComissao = employee;
 
         // Se baseSalary é inválido, lança exceção
-        if (baseSalary < 0.0)
+        if (baseSalary < 0.0) {
             throw new IllegalArgumentException("Base salary must be >= 0.0");
-
-        this.baseSalary = baseSalary;
+        }
+        setBaseSalary(baseSalary);
     }
 
     // define salario base
@@ -29,7 +29,7 @@ public class BasePlusCommissionEmployee {
 
     // Retorna salário base
     public double getBaseSalary() {
-        return baseSalary;
+        return this.baseSalary;
     }
 
     // Calcula Ganhos
@@ -38,13 +38,33 @@ public class BasePlusCommissionEmployee {
     }
 
     // retorna Representação de string de BasePlusCommissionEmployee
+    @Override
     public String toString() {
-        return String.format("%s %s%n%s: %.2f", "base-salaried", empregadoPorComissao.toString(), "base salary",
-                getBaseSalary());
+        return String.format(empregadoPorComissao.toString() + "\nbase salary " + getBaseSalary());
     }
 
-    // Retorna todo o objeto CommissionEmployee
-    public CommissionEmployee getEmployee() {
-        return empregadoPorComissao;
+    //Retorna todo firstName
+    public String getFirstName() {
+        return empregadoPorComissao.getFirstName();
+    }
+
+    //Retorna lastName
+    public String getLastName() {
+        return empregadoPorComissao.getLastName();
+    }
+
+    //Retorna socialSecurityNumber
+    public String getSocialSecurityNumber() {
+        return empregadoPorComissao.getSocialSecurityNumber();
+    }
+
+    //Retorna grossSales
+    public double getGrossSales() {
+        return empregadoPorComissao.getGrossSales();
+    }
+
+    //Retorna commissionRate
+    public double getCommissionRate() {
+        return empregadoPorComissao.getCommissionRate();
     }
 } // BasePlusCommissionEmployee
