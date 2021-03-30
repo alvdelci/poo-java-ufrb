@@ -1,46 +1,46 @@
 package comissionEmployee;
 // Fig. 9.10: CommissionEmployee.java
 
-public class CommissionEmployee {
-    private final String firstName;
-    private final String lastName;
-    private final String socialSecurityNumber;
-    private double grossSales; // gross weekly sales
-    private double commissionRate; // commission percentage
+public class CommissionEmployee extends Employee {
+    // variaveis de instancia
+    private double grossSales; // Vendas brutas
+    private double commissionRate; // porcentagem e comissao
 
     // Contrutor de cinco argumentos
     public CommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales,
             double commissionRate) {
-        // implicit call to Object constructor occurs here
+        // Chamando contrutor de Employee
+        super(firstName, lastName, socialSecurityNumber);
 
         // if grossSales is invalid throw exception
-        if (grossSales < 0.0)
+        if (grossSales < 0.0) {
             throw new IllegalArgumentException("Gross sales must be >= 0.0");
-
+        }
         // if commissionRate is invalid throw exception
-        if (commissionRate <= 0.0 || commissionRate >= 1.0)
+        if (commissionRate <= 0.0 || commissionRate >= 1.0) {
             throw new IllegalArgumentException("Commission rate must be > 0.0 and < 1.0");
+        }
 
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.socialSecurityNumber = socialSecurityNumber;
+        super.setFirstName(firstName);
+        super.setLastName(lastName);
+        super.setSocialSecurityNumber(socialSecurityNumber);
         this.grossSales = grossSales;
         this.commissionRate = commissionRate;
     } // end constructor
 
-    // Retorna nome
+    // Retorna firstName
     public String getFirstName() {
-        return firstName;
+        return super.getFirstName();
     }
 
-    // retorna sobrenome
+    // retorna lastName
     public String getLastName() {
-        return lastName;
+        return super.getLastName();
     }
 
-    // retorna numero da previdencia social
+    // retorna socialSecurityName
     public String getSocialSecurityNumber() {
-        return socialSecurityNumber;
+        return super.getSocialSecurityNumber();
     }
 
     // define valor de venda bruto
@@ -77,8 +77,7 @@ public class CommissionEmployee {
     // retorna string de representação de objeto CommissionEmployee
     @Override
     public String toString() {
-        return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f", "commission employee", getFirstName(),
-                getLastName(), "social security number", getSocialSecurityNumber(), "gross sales", getGrossSales(),
-                "commission rate", getCommissionRate());
+        return String.format(super.toString() + "\nGross sales " + getGrossSales() + "\nCommission rate " +
+                getCommissionRate() + "\nEarnings " + earnings());
     }
 } // CommissionEmployee
