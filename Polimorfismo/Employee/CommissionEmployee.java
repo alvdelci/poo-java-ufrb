@@ -1,4 +1,4 @@
-package Polimorfismo;
+package Polimorfismo.Employee;
 
 // Fig. 10.7: CommissionEmployee.java
 // CommissionEmployee class extends Employee.

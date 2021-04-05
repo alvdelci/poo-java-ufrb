@@ -1,4 +1,4 @@
-package Polimorfismo;
+package Polimorfismo.Employee;
 
 // Fig. 10.9: PayrollSystemTest.java
 // Employee hierarchy test program.

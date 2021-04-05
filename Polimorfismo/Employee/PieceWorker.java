@@ -1,4 +1,4 @@
-package Polimorfismo;
+package Polimorfismo.Employee;
 //PieceWorker subclasse de Employee
 public class PieceWorker extends Employee {
     //Variaveis de instancia

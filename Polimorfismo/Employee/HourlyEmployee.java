@@ -1,4 +1,4 @@
-package Polimorfismo;
+package Polimorfismo.Employee;
 
 // Fig. 10.6: HourlyEmployee.java
 // HourlyEmployee class extends Employee.
