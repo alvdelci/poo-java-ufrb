@@ -1,4 +1,4 @@
-package comissionEmployee;
+package HerancaComposicao.comissionEmployee;
 // Fig. 9.11: BasePlusCommissionEmployee.java
 
 public class BasePlusCommissionEmployee {

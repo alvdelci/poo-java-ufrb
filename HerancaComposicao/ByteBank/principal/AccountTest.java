@@ -1,7 +1,7 @@
-package ByteBank.principal;
+package HerancaComposicao.ByteBank.principal;
 //Entrada e saída de números de ponto flutuante com  objetos Account;
 import java.util.*;
-import ByteBank.banco.Account;
+import HerancaComposicao.ByteBank.banco.Account;
 
 public class AccountTest{
 	//Método main inicia a execução do aplicativo java;

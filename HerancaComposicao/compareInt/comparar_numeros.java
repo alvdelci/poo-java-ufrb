@@ -1,4 +1,4 @@
-package compareInt;
+package HerancaComposicao.compareInt;
 
 import java.util.*; //Importando biblioteca java.utils
 

@@ -1,4 +1,4 @@
-package ByteBank.banco;
+package HerancaComposicao.ByteBank.banco;
 //Classe Account com um construtor para validar e
 //inicializar a variável de instância balance com um valor double;
 

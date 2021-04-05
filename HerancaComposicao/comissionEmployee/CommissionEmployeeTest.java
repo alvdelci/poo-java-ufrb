@@ -1,4 +1,4 @@
-package comissionEmployee;
+package HerancaComposicao.comissionEmployee;
 
 // BasePlusCommissionEmployeeTest.java
 // Testing class BasePlusCommissionEmployee.

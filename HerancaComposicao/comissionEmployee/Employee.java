@@ -1,4 +1,4 @@
-package comissionEmployee;
+package HerancaComposicao.comissionEmployee;
 
 public class Employee {
     // Variaveis de instancia

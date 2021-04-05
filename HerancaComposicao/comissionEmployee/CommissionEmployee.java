@@ -1,4 +1,4 @@
-package comissionEmployee;
+package HerancaComposicao.comissionEmployee;
 // Fig. 9.10: CommissionEmployee.java
 
 public class CommissionEmployee extends Employee {
