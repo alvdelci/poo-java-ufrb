@@ -22,9 +22,9 @@ public class PayrollSystemTest {
 
         // initialize array with Employees
         employees[0] = salariedEmployee;
-        employees[1] = hourlyEmployee;
-        employees[2] = commissionEmployee;
-        employees[3] = basePlusCommissionEmployee;
+      //  employees[1] = hourlyEmployee;
+      //  employees[2] = commissionEmployee;
+      //  employees[3] = basePlusCommissionEmployee;
 
         System.out.printf("Employees processed polymorphically:%n%n");
 
@@ -33,15 +33,15 @@ public class PayrollSystemTest {
             System.out.println(currentEmployee); // invokes toString
 
             // determine whether element is a BasePlusCommissionEmployee
-            if (currentEmployee instanceof BasePlusCommissionEmployee) {
+         //   if (currentEmployee instanceof BasePlusCommissionEmployee) {
                 // downcast Employee reference to
                 // BasePlusCommissionEmployee reference
-                BasePlusCommissionEmployee employee = (BasePlusCommissionEmployee) currentEmployee;
+          //      BasePlusCommissionEmployee employee = (BasePlusCommissionEmployee) currentEmployee;
 
-                employee.setBaseSalary(1.10 * employee.getBaseSalary());
+          //      employee.setBaseSalary(1.10 * employee.getBaseSalary());
 
-                System.out.printf("new base salary with 10%% increase is: $%,.2f%n", employee.getBaseSalary());
-            }
+        //        System.out.printf("new base salary with 10%% increase is: $%,.2f%n", employee.getBaseSalary());
+         //   }
 
             System.out.printf("earned $%,.2f%n%n", currentEmployee.earnings());
         }
